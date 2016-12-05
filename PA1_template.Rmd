@@ -8,6 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 devtools:install_github("rmarkdown", "rstudio")
 knitr::opts_chunk$set(echo = TRUE, cache=TRUE)
+rmarkdown::render()
 library(stats)
 ```
 
