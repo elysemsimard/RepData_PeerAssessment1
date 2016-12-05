@@ -52,7 +52,7 @@ aggr_activity <- aggregate(steps ~ date, data=activity, sum, na.action = na.omit
 plot(aggr_activity$date, aggr_activity$steps, type="h", xlab = "Date", ylab = "Total number of steps", main = "Total number of steps taken each day")
 ```
 
-![plot of chunk plot](figure/plot-1.png)
+![](figure/plot-1.png)
 
 
 ### Mean and median of the total number of steps taken per day
