@@ -52,7 +52,7 @@ aggr_activity <- aggregate(steps ~ date, data=activity, sum, na.action = na.omit
 plot(aggr_activity$date, aggr_activity$steps, type="h", xlab = "Date", ylab = "Total number of steps", main = "Total number of steps taken each day")
 ```
 
-![plot of chunk plot](figure/plot-1.png?raw=true)
+![plot of chunk plot](figure/plot-1.png)
 
 
 ### Mean and median of the total number of steps taken per day
@@ -87,7 +87,7 @@ mean_per_interval <- aggregate(steps ~ interval, data=activity, FUN = "mean", na
 plot(mean_per_interval$interval, mean_per_interval$steps, type = "l", xlab = "Interval", ylab = "Steps", main = "Average number of steps taken in each interval")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png?raw=true)
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
 
 
 ### The 5-minute interval which contains the maximum number of steps
@@ -138,7 +138,7 @@ aggr_activity_impute <- aggregate(steps ~ date, data=activity_impute, sum, na.ac
 plot(aggr_activity_impute$date, aggr_activity_impute$steps, type="h", xlab = "Date", ylab = "Steps", main = "Total number of steps per day")
 ```
 
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png?raw=true)
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png)
 
 
 ### Mean and median of the total number of steps taken per day
@@ -186,7 +186,7 @@ mean_per_interval_impute <- aggregate(steps ~ interval+day, data=activity_impute
 xyplot(steps ~ interval | day, data = mean_per_interval_impute, layout = c(1, 2), type="l")
 ```
 
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png?raw=true)
+![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png)
 
 
 
