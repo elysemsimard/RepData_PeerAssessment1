@@ -6,6 +6,7 @@ output: html_document
 # Course Project 1 - Reproducible Research
 
 ```{r setup, include=FALSE}
+devtools:install_github("rmarkdown", "rstudio")
 knitr::opts_chunk$set(echo = TRUE, cache=TRUE)
 library(stats)
 ```
