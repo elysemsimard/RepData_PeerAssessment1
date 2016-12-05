@@ -47,7 +47,7 @@ class(activity$date)
 For this part, we will ignore the missing values.
 
 
-```r
+```{r simpleplot}
 aggr_activity <- aggregate(steps ~ date, data=activity, sum, na.action = na.omit)
 plot(aggr_activity$date, aggr_activity$steps, type="h", xlab = "Date", ylab = "Total number of steps", main = "Total number of steps taken each day")
 ```
